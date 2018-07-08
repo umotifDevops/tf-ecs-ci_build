@@ -5,16 +5,16 @@ description = "image for container"
 
 variable "container_name" {
   description = "Name of container"
-  default = "Blog"
+  default = "Gulam_Mohammed"
 }
 
 variable "int_port" {
   description = "Internal Port for container"
-  default = "2343"
+  default = "2353"
 }
 
 variable "ext_port" {
   description = "External Port for container"
-  default = "80"
+  default = "8090"
 }
 
