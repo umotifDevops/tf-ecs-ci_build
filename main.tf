@@ -11,3 +11,9 @@ module "container" {
   ext_port = "${lookup(var.ext_port, var.env)}"
 }
 
+resource "null_resource" "null_id"
+{
+  provisioner "local-exec" { 
+   command = " echo ${module.container.container_name} >>container.txt"
+}
+}
